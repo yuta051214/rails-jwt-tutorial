@@ -1,0 +1,19 @@
+current directory: /Users/kimurayuta/Desktop/rails_workspace/jwt_practice/rails-jwt-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/kimurayuta/.rbenv/versions/3.2.1/bin/ruby -I /Users/kimurayuta/.rbenv/versions/3.2.1/lib/ruby/site_ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /Users/kimurayuta/Desktop/rails_workspace/jwt_practice/rails-jwt-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230620-16791-75p90c sitelibdir\=./.gem.20230620-16791-75p90c clean
+
+current directory: /Users/kimurayuta/Desktop/rails_workspace/jwt_practice/rails-jwt-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230620-16791-75p90c sitelibdir\=./.gem.20230620-16791-75p90c
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/kimurayuta/Desktop/rails_workspace/jwt_practice/rails-jwt-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230620-16791-75p90c sitelibdir\=./.gem.20230620-16791-75p90c install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20230620-16791-75p90c/bootsnap
+
+current directory: /Users/kimurayuta/Desktop/rails_workspace/jwt_practice/rails-jwt-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230620-16791-75p90c sitelibdir\=./.gem.20230620-16791-75p90c clean
