@@ -5,7 +5,7 @@
 「Devise-jwtは、ユーザー認証にJSON Web Tokens(JWT)を使用するDevise拡張です。JSON Web Tokens(JWT)では、クッキーを使うのではなく、リクエストヘッダそのものにトークンが追加されます（クッキーとして保存/取得されるわけではありません）。これは（クッキーのように）ブラウザによって自動的に実行されるのではなく、通常、AJAX呼び出しの一部としてフロントエンドフレームワークによって処理されます。」
 
 
-# 入力／出力
+# User
 - ユーザ登録 ( POST http://localhost:4000/signup )  
   ![signup](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/7d6c9155-f669-40d9-945a-f4c044d645d0)  
   ユーザ登録時のレスポンスにも、header に Authorization が含まれている。
@@ -26,3 +26,19 @@
 - ログアウト ( DELETE http://localhost:4000/logout )  
   ![logout](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/ad06ca94-5535-47e7-a0d4-29fbb4b198d3)
 
+# Article
+モデル・コントローラ・ルーティングを設定
+
+```
+$ rails generate model Article content:text user:references
+$ rails db:migrate
+```
+
+```
+$ rails generate controller Articles
+```
+
+※ `serializers/article_serializer.rb` の追加も忘れずに！
+
+- 投稿 ( POST http://localhost:4000/articles )
+  ![create](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/91c60d3c-9126-4417-b2d8-17682eaadc51)
