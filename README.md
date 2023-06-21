@@ -7,7 +7,8 @@
 
 # 入力／出力
 - ユーザ登録 ( POST http://localhost:4000/signup )  
-  ![signup](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/7d6c9155-f669-40d9-945a-f4c044d645d0)
+  ![signup](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/7d6c9155-f669-40d9-945a-f4c044d645d0)  
+  ユーザ登録時のレスポンスにも、header に Authorization が含まれている。
   ***
 
 - ログイン ( POST http://localhost:4000/login )  
@@ -21,7 +22,7 @@
   (ログイン時に発行されるJWTをheader の Authorization に含めないと以下の before_action :authenticate_user! で弾かれる)  
   ![no authorization](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/667efcd9-506b-4353-a714-0c45fb793b0f)
   ***
-  
+
 - ログアウト ( DELETE http://localhost:4000/logout )  
   ![logout](https://github.com/yuta051214/rails-jwt-tutorial/assets/100740924/ad06ca94-5535-47e7-a0d4-29fbb4b198d3)
 
